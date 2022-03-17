@@ -2,7 +2,7 @@
 a python module to explore libraries callables and attributes...useful when the doc is scarce
 
 usage:<br>
->diro(object)
+>diro(object)<br></p>
 <br>prints a list of object.callables() and a list of object.attributes and returns a tuple (list(callables),list(attributes))
 >dirdoc(object)
 <br>print recursively the callables and their doc
