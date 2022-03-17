@@ -1,10 +1,10 @@
 # python-object-explore-module
 a python module to explore libraries callables and attributes...useful when the doc is scarce
 
-usage:
-''diro(object) ''
+usage:<br>
+>diro(object)
 -->prints a list of object.callables() and a list of object.attributes and returns a tuple (list(callables),list(attributes))
-''dirdoc(object)''
+>dirdoc(object)
 -->print recursively the callables and their doc
 
 to import automatically the functions in python :
