@@ -8,6 +8,9 @@ usage:<br>
 `dirdoc(object)`<br>
 >print recursively the callables and their doc<br>
 
+`dirpath(obj):`<br>
+>print the absolute path of the file in which obj is defined<br>
+
 to import automatically the functions in python :
 1. find your modules path : type `print(sys.path)` in python interpreter
 2. put objectexplore.py file in one of the modules path
