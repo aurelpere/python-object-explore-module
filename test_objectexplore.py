@@ -45,7 +45,7 @@ def test_dirpath():
     dirpath(str)
     sys.stdout = sys.__stdout__
     print(captured_output.getvalue())
-    assert "check shorturl.at/bhtA2" in captured_output.getvalue()
+    assert "cf shorturl.at/bhtA2" in captured_output.getvalue()
     captured_output = io.StringIO()
     sys.stdout = captured_output
     dirpath(numpy.where)

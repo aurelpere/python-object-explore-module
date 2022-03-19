@@ -38,7 +38,6 @@ def dirpath(obj):
         print(type(obj))
     except:
         try:
-            print(type(__builtins__))
             if isinstance(obj, types.BuiltinFunctionType) or obj in builtins.__dict__.values():
                 print('builtin object,class or function: cf shorturl.at/bhtA2 (stackoverflow)')
                 print(type(obj))
@@ -48,3 +47,4 @@ def dirpath(obj):
         except:
             print('chemin non trouvé')
     return 1
+
