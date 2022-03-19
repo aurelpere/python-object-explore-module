@@ -1,3 +1,5 @@
+[![Test-Lint-Format](https://github.com/aurelpere/python-object-explore-module/actions/workflows/main.yml/badge.svg)](https://github.com/aurelpere/python-object-explore-module/actions/workflows/main.yml) ![test-coverage badge](./coverage-badge.svg) [![Maintainability](https://api.codeclimate.com/v1/badges/4bd58efebdf3a6ec0ac5/maintainability)](https://codeclimate.com/github/aurelpere/python-object-explore-module/maintainability) 
+
 # python-object-explore-module
 a python module to explore libraries callables and attributes...useful when the doc is scarce
 
