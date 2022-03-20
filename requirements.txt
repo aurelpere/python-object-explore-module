@@ -6,3 +6,4 @@ genbadge
 defusedxml
 pandas
 numpy
+psutil
