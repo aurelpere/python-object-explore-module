@@ -13,6 +13,10 @@ usage:<br>
 `dirpath(obj):`<br>
 >print the absolute path of the file in which obj is defined<br>
 
+`dirpid():`<br>
+>print the parent pid and children pid of python processes<br>
+
+
 to import automatically the functions in python :
 1. find your modules path : type `print(sys.path)` in python interpreter
 2. put objectexplore.py file in one of the modules path
