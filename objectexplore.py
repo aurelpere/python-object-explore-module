@@ -5,6 +5,8 @@ this is objectexplore.py module
 """
 import types
 import builtins
+import os
+import psutil
 
 def diro(obj):
     "return callables and attributes of the object argument"
@@ -48,3 +50,16 @@ def dirpath(obj):
             print('chemin non trouvé')
     return 1
 
+def dirpid():
+    pid = os.getpid()
+    # have to go two levels up to skip calling shell and 
+    # get to actual parent process
+    parent = psutil.Process(pid).parent().parent()
+    print (f'Parent {parent.name()} [PID = {parent.pid}]' )
+    print ('        |')
+    for child in parent.children(recursive=True):
+        print ('        |')
+        if child.pid != pid:
+            print (f'        - Child {child.name()} [PID = {child.pid}]')
+        else:
+            print (f'        - Child {child.name()} [PID = {child.pid}] (Self)')
